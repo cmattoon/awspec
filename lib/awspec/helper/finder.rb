@@ -34,6 +34,7 @@ require 'awspec/helper/finder/cloudtrail'
 require 'awspec/helper/finder/waf'
 require 'awspec/helper/finder/wafregional'
 require 'awspec/helper/finder/acm'
+require 'awspec/helper/finder/imagebuilder_pipeline'
 require 'awspec/helper/finder/cloudwatch_logs'
 require 'awspec/helper/finder/dynamodb'
 require 'awspec/helper/finder/sqs'
@@ -97,6 +98,7 @@ module Awspec::Helper
     include Awspec::Helper::Finder::Waf
     include Awspec::Helper::Finder::WafRegional
     include Awspec::Helper::Finder::Acm
+    include Awspec::Helper::Finder::ImagebuilderPipeline
     include Awspec::Helper::Finder::AccountAttributes
     include Awspec::Helper::Finder::CloudwatchLogs
     include Awspec::Helper::Finder::Dynamodb
@@ -149,6 +151,7 @@ module Awspec::Helper
       wafregional_client: Aws::WAFRegional::Client,
       sts_client: Aws::STS::Client,
       acm_client: Aws::ACM::Client,
+      imagebuilder_client: Aws::Imagebuilder::Client,
       cloudwatch_logs_client: Aws::CloudWatchLogs::Client,
       dynamodb_client: Aws::DynamoDB::Client,
       sqs_client: Aws::SQS::Client,

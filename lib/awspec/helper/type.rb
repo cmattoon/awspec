@@ -15,7 +15,7 @@ module Awspec
         cloudwatch_alarm cloudwatch_event directconnect_virtual_interface
         ebs ec2 ecr_repository ecs_cluster ecs_container_instance ecs_service ecs_task_definition
         efs eks eks_nodegroup elasticache elasticache_cache_parameter_group elasticsearch elb emr firehose iam_group
-        iam_policy iam_role iam_user kinesis kms lambda launch_configuration launch_template mq nat_gateway
+        iam_policy iam_role iam_user imagebuilder_pipeline kinesis kms lambda launch_configuration launch_template mq nat_gateway
         network_acl network_interface nlb nlb_listener nlb_target_group
         rds rds_proxy rds_db_cluster_parameter_group rds_db_parameter_group rds_db_subnet_group
         rds_db_cluster rds_global_cluster
