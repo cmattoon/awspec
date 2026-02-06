@@ -3,7 +3,7 @@
 Aws.config[:imagebuilder] = {
   stub_responses: {
     list_components: {
-      component_summary_list: [
+      component_version_list: [
         {
           arn: 'arn:aws:imagebuilder:us-east-1:123456789012:component/my-imagebuilder-component/1.0.0',
           name: 'my-imagebuilder-component',
@@ -12,14 +12,23 @@ Aws.config[:imagebuilder] = {
           platform: 'Linux',
           owner: 'Self',
           date_created: Time.parse('2018-10-28 00:23:32 -0400')
+        },
+        {
+          arn: 'arn:aws:imagebuilder:us-east-1:123456789012:component/my-imagebuilder-component/2.0.0',
+          name: 'my-imagebuilder-component',
+          version: '2.0.0',
+          description: 'My image builder component',
+          platform: 'Linux',
+          owner: 'Self',
+          date_created: Time.parse('2019-10-28 00:23:32 -0400')
         }
       ]
     },
     get_component: {
       component: {
-        arn: 'arn:aws:imagebuilder:us-east-1:123456789012:component/my-imagebuilder-component/1.0.0',
+        arn: 'arn:aws:imagebuilder:us-east-1:123456789012:component/my-imagebuilder-component/2.0.0',
         name: 'my-imagebuilder-component',
-        version: '1.0.0',
+        version: '2.0.0',
         description: 'My image builder component',
         platform: 'Linux',
         owner: 'Self',
