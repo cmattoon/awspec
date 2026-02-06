@@ -44,6 +44,7 @@
 | [iam_role](#iam_role)
 | [iam_user](#iam_user)
 | [imagebuilder_pipeline](#imagebuilder_pipeline)
+| [imagebuilder_recipe](#imagebuilder_recipe)
 | [internet_gateway](#internet_gateway)
 | [kinesis](#kinesis)
 | [kms](#kms)
@@ -1981,6 +1982,20 @@ end
 ```
 
 ### its(:arn), its(:name), its(:description), its(:platform), its(:image_recipe_arn), its(:infrastructure_configuration_arn), its(:distribution_configuration_arn), its(:status)
+
+## <a name="imagebuilder_recipe">imagebuilder_recipe</a>
+
+ImagebuilderRecipe resource type.
+
+### exist
+
+```ruby
+describe imagebuilder_recipe('my-imagebuilder-recipe') do
+  it { should exist }
+end
+```
+
+### its(:arn), its(:name), its(:description), its(:platform), its(:version), its(:parent_image)
 
 ## <a name="internet_gateway">internet_gateway</a>
 
