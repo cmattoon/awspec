@@ -43,6 +43,7 @@
 | [iam_policy](#iam_policy)
 | [iam_role](#iam_role)
 | [iam_user](#iam_user)
+| [imagebuilder_component](#imagebuilder_component)
 | [imagebuilder_pipeline](#imagebuilder_pipeline)
 | [imagebuilder_recipe](#imagebuilder_recipe)
 | [internet_gateway](#internet_gateway)
@@ -1996,6 +1997,20 @@ end
 ```
 
 ### its(:arn), its(:name), its(:description), its(:platform), its(:version), its(:parent_image)
+
+## <a name="imagebuilder_component">imagebuilder_component</a>
+
+ImagebuilderComponent resource type.
+
+### exist
+
+```ruby
+describe imagebuilder_component('my-imagebuilder-component') do
+  it { should exist }
+end
+```
+
+### its(:arn), its(:name), its(:description), its(:platform), its(:version), its(:type)
 
 ## <a name="internet_gateway">internet_gateway</a>
 

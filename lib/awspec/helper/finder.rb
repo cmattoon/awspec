@@ -36,6 +36,7 @@ require 'awspec/helper/finder/wafregional'
 require 'awspec/helper/finder/acm'
 require 'awspec/helper/finder/imagebuilder_pipeline'
 require 'awspec/helper/finder/imagebuilder_recipe'
+require 'awspec/helper/finder/imagebuilder_component'
 require 'awspec/helper/finder/cloudwatch_logs'
 require 'awspec/helper/finder/dynamodb'
 require 'awspec/helper/finder/sqs'
@@ -101,6 +102,7 @@ module Awspec::Helper
     include Awspec::Helper::Finder::Acm
     include Awspec::Helper::Finder::ImagebuilderPipeline
     include Awspec::Helper::Finder::ImagebuilderRecipe
+    include Awspec::Helper::Finder::ImagebuilderComponent
     include Awspec::Helper::Finder::AccountAttributes
     include Awspec::Helper::Finder::CloudwatchLogs
     include Awspec::Helper::Finder::Dynamodb
